@@ -1,5 +1,5 @@
 // Hardcoded Hugging Face token and endpoints
-const HF_TOKEN = "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";
+const HF_TOKEN = "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";
 const REPLY_ENDPOINT = "https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2";
 const LANG_ENDPOINT = "https://api-inference.huggingface.co/models/ai4bharat/IndicLID";
 
