@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Firtifly AI Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Firtifly AI Dating Assistant</h1>
+
+    <!-- Customer details -->
+    <div class="card">
+      <h3>Customer Details</h3>
+      <label>Name</label><input id="custName">
+      <label>Age</label><input id="custAge" type="number">
+      <label>Gender</label>
+      <select id="custGender"><option>Male</option><option>Female</option></select>
+      <label>Location</label><input id="custLocation">
+    </div>
+
+    <!-- My profile -->
+    <div class="card">
+      <h3>My Profile</h3>
+      <label>Name</label><input id="myName" value="Sophia">
+      <label>Age</label><input id="myAge" type="number" value="28">
+      <label>Telegram Handle</label><input id="telegramHandle" placeholder="@yourhandle">
+      <label>Background Story</label>
+      <textarea id="myStory">Divorced in America, joined via cousin’s reference.</textarea>
+    </div>
+
+    <!-- Chat interface -->
+    <div class="card">
+      <h3>Chat Interface</h3>
+      <label>Customer Message</label>
+      <textarea id="custMessage"></textarea>
+      <button onclick="generateReply()">Generate Reply</button>
+      <p id="langBadge"></p>
+      <label>Reply (Editable)</label>
+      <textarea id="replyMessage"></textarea>
+      <button onclick="sendMessage()">Send & Save</button>
+      <button onclick="clearHistory()">Clear History</button>
+      <button onclick="downloadChat()">Download Chat</button>
+    </div>
+
+    <!-- Chat history -->
+    <div class="card">
+      <h3>Chat History</h3>
+      <div id="chatHistory"></div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
